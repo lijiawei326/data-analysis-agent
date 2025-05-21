@@ -1,0 +1,94 @@
+[
+  {
+    "role": "user",
+    "content": "读取./test.csv并清洗"
+  },
+  {
+    "id": "__fake_id__",
+    "content": [
+      {
+        "annotations": [],
+        "text": "\n\n我是一个对话智能体，主要负责日常问题的解答。对于数据分析和处理的任务，建议您转交给分析智能体。是否需要我为您调用分析智能体来处理这个数据清洗的工作？\n\n\n",
+        "type": "output_text"
+      }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message"
+  },
+  {
+    "arguments": " {}",
+    "call_id": "0196f0c4a07151952528c03a141a3266",
+    "name": "analysis_agent",
+    "type": "function_call",
+    "id": "__fake_id__"
+  },
+  {
+    "call_id": "0196f0c4a07151952528c03a141a3266",
+    "output": "{'assistant': 'analysis_agent'}",
+    "type": "function_call_output"
+  },
+  {
+    "id": "__fake_id__",
+    "content": [
+      {
+        "annotations": [],
+        "text": "\n\n",
+        "type": "output_text"
+      }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message"
+  },
+  {
+    "arguments": " {\"input\": \"./test.csv\"}",
+    "call_id": "0196f0c501922281fb16d2e702388757",
+    "name": "load_data",
+    "type": "function_call",
+    "id": "__fake_id__"
+  },
+  {
+    "call_id": "0196f0c501922281fb16d2e702388757",
+    "output": "\n\n\n\n<status>\n成功\n</status>",
+    "type": "function_call_output"
+  },
+  {
+    "id": "__fake_id__",
+    "content": [
+      {
+        "annotations": [],
+        "text": "\n\n",
+        "type": "output_text"
+      }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message"
+  },
+  {
+    "arguments": " {\"input\": \"./test.csv\"}",
+    "call_id": "0196f0c6b78d314bbcfa20d3f972cec3",
+    "name": "clean_data",
+    "type": "function_call",
+    "id": "__fake_id__"
+  },
+  {
+    "call_id": "0196f0c6b78d314bbcfa20d3f972cec3",
+    "output": "\n\n\n\n清洗后的数据已准备好，现在转接给数据分析智能体进行后续处理。如果有任何分析需求，请提交给相关模块。",
+    "type": "function_call_output"
+  },
+  {
+    "id": "__fake_id__",
+    "content": [
+      {
+        "annotations": [],
+        "text": "\n\n数据已成功加载并完成清洗流程。目前数据处于就绪状态，若需要进行后续分析，请提供您的具体需求。",
+        "type": "output_text"
+      }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message"
+  }
+]

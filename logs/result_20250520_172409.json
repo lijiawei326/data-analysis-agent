@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "./test/final_data.csv，生成分析报告"
+  }
+]
