@@ -5,7 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "mcp>=1.8.1",
+    "matplotlib>=3.10.3",
+    "mcp[cli]>=1.8.1",
+    "numpy>=2.2.6",
     "openai>=1.78.1",
     "openai-agents>=0.0.14",
+    "pandas>=2.2.3",
+    "rich>=14.0.0",
 ]

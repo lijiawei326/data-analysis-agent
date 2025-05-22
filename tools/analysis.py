@@ -51,13 +51,13 @@ report_agent = Agent(
 @function_tool()
 async def fetch_data_info(context: RunContextWrapper):
     """
-    获取读取到的数据的具体信息，无需传入参数
+    获取读取到的数据的具体信息
     """
+    if context.context.data.data is None:
+        return '数据为空，请先读取数据'
     print('#######数据信息########')
     print(context.context.data.data.head())
     print('######################')
-    if context.context.data.data is None:
-        return '数据为空，请先读取数据'
     data = context.context.data.data
     info = "数据类型信息：\n"
     for column in data.columns:
@@ -74,19 +74,22 @@ async def analysis_single_variable(context: RunContextWrapper, reason: str, vari
     :param variable: 变量名
     """
     print(f'开始分析{variable}，原因：{reason}')
-    variable_data = context.context.data[variable]
-    if variable_data.dtype == 'object':
-        res =  f'{variable}的计算结果为：\n{variable_data.value_counts()}'
-    elif variable_data.dtype == 'int64' or variable_data.dtype == 'float64':
-        res = f'{variable}的计算结果为：\n{variable_data.describe()}'
-    elif variable_data.dtype == 'datetime64':
-        res = f'{variable}的计算结果为：\n{variable_data.describe()}'
-    elif variable_data.dtype == 'bool':
-        res = f'{variable}的计算结果为：\n{variable_data.value_counts()}'
-    elif variable_data.dtype == 'category':
-        res = f'{variable}的计算结果为：\n{variable_data.describe()}'
-    else:
-        res = f'{variable}的计算结果为：\n{variable_data.describe()}'
+    variable_data = context.context.data.data[variable]
+    try:
+        if variable_data.dtype == 'object':
+            res =  f'{variable}的计算结果为：\n{variable_data.value_counts()}'
+        elif variable_data.dtype == 'int64' or variable_data.dtype == 'float64':
+            res = f'{variable}的计算结果为：\n{variable_data.describe()}'
+        elif variable_data.dtype == 'datetime64':
+            res = f'{variable}的计算结果为：\n{variable_data.describe()}'
+        elif variable_data.dtype == 'bool':
+            res = f'{variable}的计算结果为：\n{variable_data.value_counts()}'
+        elif variable_data.dtype == 'category':
+            res = f'{variable}的计算结果为：\n{variable_data.describe()}'
+        else:
+            res = f'{variable}的计算结果为：\n{variable_data.describe()}'
+    except Exception as e:
+        return f'## 变量{variable}无法分析，发生错误:{e}'
 
     report = await Runner.run(
         starting_agent=report_agent,
@@ -128,7 +131,7 @@ async def analysis_multiple_variables(context: RunContextWrapper, inputs: List[V
     report_path = f'./logs/reports_{datetime.now().strftime("%Y%m%d_%H%M%S")}.md'
     with open(report_path, 'w') as f:
         f.write(description_report)
-    return f'变量描述性分析报告已生成，文件路径为：{report_path}'
+    return f'变量描述性分析报告已生成，文件路径为：{report_path}\n\n生成内容为：{description_report}'
 
 
 
