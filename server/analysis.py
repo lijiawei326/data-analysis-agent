@@ -12,6 +12,10 @@ import time
 import json
 import asyncio
 import pandas as pd
+from utils.utils import remove_think
+import pandas as pd
+import numpy as np
+
 
 mcp = FastMCP("AnalysisServer")
 USER_AGENT = "analysis-app/1.0"
@@ -20,10 +24,10 @@ class Manager:
     def __init__(self) -> None:
         self.context = AnalysisContext()
 
-
     async def run(self, read_data_method, read_data_param) -> str:
         print('开始读取数据...')
         self.context.data.data = await self._load_data(read_data_method, read_data_param)
+        print(f"数据：\n{self.context.data.data}")
         print('成功读取数据')
 
         time.sleep(1)
@@ -32,13 +36,8 @@ class Manager:
         await self._clean_data()
         print('成功清洗数据')
 
-        print('开始进行变量分析')
-        desicion_results = await self._descriptive_analysis()
-        print('成功进行变量分析')
-        
-
         print('开始生成分析报告')
-        report = await self._generate_analysis_report(desicion_results)
+        report = await self._descriptive_analysis()
         print('成功生成分析报告')
         return report
 
@@ -57,7 +56,6 @@ class Manager:
         raise NotImplementedError("SQL读取数据功能尚未实现")
 
     async def _load_data_from_pandas(self, read_data_param):
-        import pandas as pd
         from pathlib import Path
         try:
             # 规范化路径处理
@@ -95,7 +93,7 @@ class Manager:
 
     async def _descriptive_analysis(self):
         all_variables = self.context.data.data.columns.tolist()
-        
+        print(f'所有变量：{all_variables}')
         # Run all variable analyses concurrently
         tasks = [
             asyncio.create_task(
@@ -106,7 +104,7 @@ class Manager:
         report = ''
         for task in asyncio.as_completed(tasks):
             result = await task
-            report += result
+            report += result + '\n\n'
 
         return report
 
@@ -171,23 +169,36 @@ class Manager:
                 }
             
     async def _generate_analysis_report(self, variable_name):
+        """
+        生成单个变量的分析报告
+        """
         # ---------------判断是否进行分析---------------#
         series = self.context.data.data[variable_name]
+        values_str = np.array2string(series.values, threshold=np.inf)
         variable_info = json.dumps(
             {
                 "variable_name": variable_name,
                 "variable_dtype": str(series.dtype),
-                "value": (str(series)[:2000] 
-                         if len(str(series)) > 2000 
-                         else str(series)),
+                "value": (values_str[:10000] + '...（**数据已截断**）'
+                         if len(values_str) > 10000 
+                         else values_str),
             }
         )
-        judge_result = await Runner.run(
-            starting_agent=variable_analysis_agent,
-            input=variable_info
-        )
-        judge_result = judge_result.final_output_as(VariableAnalysisDecision)
+
+        print(f'变量 {variable_name} 的信息：\n{variable_info}')
+        try:
+            time.sleep(1)  # 添加1秒延迟
+            judge_result = await Runner.run(
+                starting_agent=variable_analysis_agent,
+                input=variable_info
+            )
+            judge_result = judge_result.final_output_as(VariableAnalysisDecision)
+        except Exception as e:
+            print(f'变量 {variable_name} 分析失败：{e}')
+            return f'## {variable_name}不进行分析\n原因：{e}'
         # ---------------------分析---------------------#
+        print(f"============变量：{variable_name}=============")
+        print(f"是否分析：{judge_result.should_analyze}\n原因：{judge_result.reason}")
         if judge_result.should_analyze:
             variable_description_info = json.dumps(
                 {
@@ -195,12 +206,13 @@ class Manager:
                     "variable_description": str(await self._get_variable_description(series))
                 }
             )
+            time.sleep(1)  # 添加1秒延迟
             single_variable_report = await Runner.run(
                 starting_agent=description_analysis_agent,
                 input=variable_description_info
             )
-            print(f'变量：{variable_name} 完成分析!')
-            return single_variable_report.final_output
+            print(f'变量 {variable_name} 的描述报告：\n{single_variable_report.final_output}')
+            return remove_think(single_variable_report.final_output)
         else:
             return f'## {variable_name}不进行分析\n原因：{judge_result.reason}'
     
@@ -219,9 +231,10 @@ async def analysis_report(read_data_method, read_data_param):
         result = await manager.run(read_data_method, read_data_param)
     except Exception as e:
         return f'数据分析报告生成失败: {e}'
+    print(result)
     return result
 
 
 if __name__ == '__main__':
-    mcp.run(transport='streamable-http')
+    mcp.run(transport='sse')
 
