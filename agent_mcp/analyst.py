@@ -25,8 +25,17 @@ variable_analysis_agent = Agent(
     3. 有实际分析意义的分类变量、数值变量建议分析
     4. 包含有意义信息的文本变量可以考虑分析
     
-    输出格式要求：Your response should be in the form of JSON with the following schema: {'response':{'variable_name': '需要评估的变量名称', 'reason': '是否建议对该变量进行描述性统计分析的原因', 'should_analyze': '是否建议对该变量进行描述性统计分析'}}. 
-    ** Do not include any other text and do not wrap the response in a code block (like ```json ```) - just provide the raw json output.**
+    输出格式要求：
+    你的响应应以JSON格式呈现，并遵循以下结构：
+    {
+        'response':
+            {
+                'variable_name': '需要评估的变量名称', 
+                'reason': '是否建议对该变量进行描述性统计分析的原因', 
+                'should_analyze': '是否建议对该变量进行描述性统计分析'
+            }
+    }
+    ** 不要包含任何其他文本，也不要将响应包裹在代码块中（例如```json ````）——只需提供原始的json输出。**
     语言：简体中文
     """,
     model=MODEL_PROVIDER.get_model(None),
