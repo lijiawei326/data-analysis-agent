@@ -11,6 +11,7 @@ from utils.utils import remove_think
 from mcp.server.fastmcp import FastMCP
 from custom_types.types import ReadDataParam
 from agent_mcp.corr_agent import column_mapping_agent
+from config import get_sort_order, custom_sort_key
 
 
 mcp = FastMCP('CorrelationServer')
@@ -118,12 +119,67 @@ class Manager:
                                    intent_col: List[str]
                                 ) -> Dict[str, Optional[str]]:
         input = f'已有列名：{exist_col}\n用户意图：{intent_col}'
-        result = await Runner.run(
-            starting_agent=column_mapping_agent,
-            input=input
-        )
-        column_map = json.loads(remove_think(result.final_output))
-        return column_map
+        
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                print(f"尝试第 {attempt + 1} 次列名映射...")
+                result = await Runner.run(
+                    starting_agent=column_mapping_agent,
+                    input=input
+                )
+                
+                # 获取原始输出
+                raw_output = result.final_output
+                # print(f"原始输出: {raw_output}")
+                
+                # 移除思考标签
+                cleaned_output = remove_think(raw_output)
+                print(f"清理后输出: {cleaned_output}")
+                
+                # 尝试解析JSON
+                try:
+                    column_map = json.loads(cleaned_output)
+                    print(f"JSON解析成功！映射结果: {column_map}")
+                    return column_map
+                except json.JSONDecodeError as e:
+                    print(f"JSON解析错误 (尝试 {attempt + 1}/{max_retries}): {e}")
+                    print(f"错误位置: 行 {e.lineno}, 列 {e.colno}")
+                    print(f"尝试解析的内容: {repr(cleaned_output)}")
+                    
+                    # 尝试修复常见的JSON格式问题
+                    try:
+                        # 移除可能的前后空白和换行
+                        cleaned_output = cleaned_output.strip()
+                        
+                        # 如果输出不是以{开头，尝试提取JSON部分
+                        if not cleaned_output.startswith('{'):
+                            # 查找第一个{和最后一个}
+                            start_idx = cleaned_output.find('{')
+                            end_idx = cleaned_output.rfind('}')
+                            if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
+                                cleaned_output = cleaned_output[start_idx:end_idx+1]
+                                print(f"提取的JSON部分: {cleaned_output}")
+                        
+                        column_map = json.loads(cleaned_output)
+                        print(f"修复后JSON解析成功！映射结果: {column_map}")
+                        return column_map
+                    except json.JSONDecodeError as e2:
+                        print(f"修复尝试失败: {e2}")
+                        
+                        # 如果是最后一次尝试，抛出错误
+                        if attempt == max_retries - 1:
+                            raise ValueError(f"经过 {max_retries} 次尝试，仍无法获得有效的JSON格式输出。最后一次输出: {repr(cleaned_output)}")
+                        else:
+                            print(f"将进行第 {attempt + 2} 次重试...")
+                            continue
+                            
+            except Exception as e:
+                if attempt == max_retries - 1:
+                    raise ValueError(f"列名映射失败，经过 {max_retries} 次尝试后仍然出错: {str(e)}")
+                else:
+                    print(f"第 {attempt + 1} 次尝试出错: {e}，将重试...")
+                    continue
 
     async def run(self,
                   read_data_param: ReadDataParam,
@@ -215,36 +271,187 @@ class Manager:
         # # ----------计算相关性------------ #
         result = {}
         print(f'开始计算相关性...')
+        
+        # 数据清理：确保相关性变量是数值型
+        for var in [var1, var2]:
+            if var in self.df.columns:
+                # 尝试转换为数值型，无法转换的设为NaN
+                self.df[var] = pd.to_numeric(self.df[var], errors='coerce')
+        
         if group_by_mapped:
             grouped = self.df.groupby(group_by_mapped)
             for keys, group in grouped:
                 sub = group[[var1, var2]].dropna()
                 key_str = " - ".join(str(k) for k in keys) if isinstance(keys, tuple) else str(keys)
-                if sub.shape[0] < 3:
+                if sub.shape[0] < 15:
                     result[key_str] = -100
                 else:
                     corr = sub[var1].corr(sub[var2])
                     result[key_str] = round(corr, 3) if pd.notna(corr) else None
         else:
             sub = self.df[[var1, var2]].dropna()
-            if sub.shape[0] < 3:
+            if sub.shape[0] < 15:
                 result[f"corr_{var1}_{var2}"] = None
             else:
                 corr = sub[var1].corr(sub[var2])
                 result[f"corr_{var1}_{var2}"] = round(corr, 3) if pd.notna(corr) else None
         # ----------构造Markdown表格返回-------------- #
-        if group_by_mapped:
-            md = "| 分组 | 相关性 |\n|---|---|\n"
-            for key, value in result.items():
-                corr_value = "数据不足" if value == -100 else value
-                md += f"| {key} | {corr_value} |\n"
-        else:
+        md = self._generate_correlation_table(result, group_by_mapped, var1, var2)
+        
+        return md
+
+    def _generate_correlation_table(self, result: Dict, group_by_mapped: List[str], var1: str, var2: str) -> str:
+        """
+        根据分组维度生成不同格式的相关性表格
+        """
+        if not group_by_mapped:
+            # 无分组：简单的单行表格
             title = list(result.keys())[0]
             value = result[title]
-            corr_value = "数据不足" if value is None else value
-            md = f"| 变量组合 | 相关性 |\n|---|---|\n| {title} | {corr_value} |\n"
+            corr_value = "数据不足" if value is None or value == -100 else value
+            return f"| 变量组合 | 相关性 |\n|---|---|\n| {var1} vs {var2} | {corr_value} |\n"
+        
+        elif len(group_by_mapped) == 1:
+            # 一维分组：简单的两列表格
+            md = f"| {group_by_mapped[0]} | 相关性 |\n|---|---|\n"
+            
+            # 获取排序规则
+            column_name = group_by_mapped[0]
+            keys = list(result.keys())
+            sort_order = get_sort_order(column_name, keys)
+            
+            # 应用排序
+            if sort_order:
+                keys = sorted(keys, key=lambda x: custom_sort_key(x, sort_order))
+            else:
+                keys = sorted(keys)  # 默认字母排序
+            
+            for key in keys:
+                value = result[key]
+                corr_value = "数据不足" if value == -100 else value
+                md += f"| {key} | {corr_value} |\n"
+            return md
+        
+        elif len(group_by_mapped) == 2:
+            # 二维分组：生成交叉表格
+            return self._generate_2d_table(result, group_by_mapped)
+        
+        else:
+            # 三维及以上：生成层次化表格
+            return self._generate_hierarchical_table(result, group_by_mapped)
 
-        return {"result": result, "markdown": md}
+    def _generate_2d_table(self, result: Dict, group_by_mapped: List[str]) -> str:
+        """
+        生成二维交叉表格
+        """
+        # 解析结果中的分组键
+        rows = set()
+        cols = set()
+        data_matrix = {}
+        
+        for key, value in result.items():
+            parts = key.split(" - ")
+            if len(parts) >= 2:
+                row_val, col_val = parts[0], parts[1]
+                rows.add(row_val)
+                cols.add(col_val)
+                data_matrix[(row_val, col_val)] = value
+        
+        # 应用排序规则
+        row_column_name = group_by_mapped[0]
+        col_column_name = group_by_mapped[1]
+        
+        # 获取行排序规则
+        row_sort_order = get_sort_order(row_column_name, list(rows))
+        if row_sort_order:
+            rows = sorted(list(rows), key=lambda x: custom_sort_key(x, row_sort_order))
+        else:
+            rows = sorted(list(rows))
+        
+        # 获取列排序规则
+        col_sort_order = get_sort_order(col_column_name, list(cols))
+        if col_sort_order:
+            cols = sorted(list(cols), key=lambda x: custom_sort_key(x, col_sort_order))
+        else:
+            cols = sorted(list(cols))
+        
+        # 构建表格头部
+        md = f"| {group_by_mapped[0]} \\ {group_by_mapped[1]} |"
+        for col in cols:
+            md += f" {col} |"
+        md += "\n|"
+        for _ in range(len(cols) + 1):
+            md += "---|"
+        md += "\n"
+        
+        # 构建表格内容
+        for row in rows:
+            md += f"| {row} |"
+            for col in cols:
+                value = data_matrix.get((row, col), None)
+                if value is None:
+                    corr_value = "无数据"
+                elif value == -100:
+                    corr_value = "数据不足"
+                else:
+                    corr_value = str(value)
+                md += f" {corr_value} |"
+            md += "\n"
+        
+        return md
+
+    def _generate_hierarchical_table(self, result: Dict, group_by_mapped: List[str]) -> str:
+        """
+        生成层次化表格（适用于三维及以上分组）
+        """
+        # 构建层次化结构
+        hierarchy = {}
+        for key, value in result.items():
+            parts = key.split(" - ")
+            current = hierarchy
+            
+            # 构建层次结构
+            for i, part in enumerate(parts[:-1]):
+                if part not in current:
+                    current[part] = {}
+                current = current[part]
+            
+            # 最后一层存储相关性值
+            last_part = parts[-1] if parts else key
+            current[last_part] = value
+        
+        # 生成表格
+        md = "| " + " | ".join(group_by_mapped) + " | 相关性 |\n"
+        md += "|" + "---|" * (len(group_by_mapped) + 1) + "\n"
+        
+        def traverse_hierarchy(current_dict, path=[], level=0):
+            # 获取当前层级的排序规则
+            if level < len(group_by_mapped):
+                column_name = group_by_mapped[level]
+                keys = list(current_dict.keys())
+                sort_order = get_sort_order(column_name, keys)
+                
+                if sort_order:
+                    keys = sorted(keys, key=lambda x: custom_sort_key(x, sort_order))
+                else:
+                    keys = sorted(keys)
+            else:
+                keys = sorted(current_dict.keys())
+            
+            for key in keys:
+                value = current_dict[key]
+                current_path = path + [str(key)]
+                if isinstance(value, dict):
+                    traverse_hierarchy(value, current_path, level + 1)
+                else:
+                    # 叶子节点，输出相关性值
+                    corr_value = "数据不足" if value == -100 else value
+                    md_row = "| " + " | ".join(current_path) + f" | {corr_value} |\n"
+                    nonlocal md
+                    md += md_row
+        
+        traverse_hierarchy(hierarchy)
+        return md
 
 
 @mcp.tool()
