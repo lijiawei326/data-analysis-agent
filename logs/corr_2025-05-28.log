@@ -1,0 +1,1030 @@
+2025-05-28 09:15:10 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 11:05:09 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 11:05:09 | INFO     | corr:run:202 - 成功读取数据！
+2025-05-28 11:05:09 | INFO     | corr:_get_columns_mapping:133 - 尝试第 1 次列名映射...
+2025-05-28 11:05:17 | INFO     | corr:_get_columns_mapping:150 - JSON解析成功！映射结果: {'风速': '风速', '臭氧浓度': '臭氧浓度', '站点': '站点', '季节': '季节'}
+2025-05-28 11:05:17 | INFO     | corr:run:214 - 列名映射为：
+{'风速': '风速', '臭氧浓度': '臭氧浓度', '站点': '站点', '季节': '季节'}
+2025-05-28 11:05:17 | INFO     | corr:run:240 - 【时间】字段不存在，自动匹配中...
+2025-05-28 11:05:17 | INFO     | corr:_get_columns_mapping:133 - 尝试第 1 次列名映射...
+2025-05-28 11:05:20 | INFO     | corr:_get_columns_mapping:150 - JSON解析成功！映射结果: {'时间': None}
+2025-05-28 11:05:20 | INFO     | corr:run:202 - 成功读取数据！
+2025-05-28 11:05:20 | INFO     | corr:_get_columns_mapping:133 - 尝试第 1 次列名映射...
+2025-05-28 11:05:23 | INFO     | corr:_get_columns_mapping:150 - JSON解析成功！映射结果: {'风速': '风速', '臭氧浓度': '臭氧浓度'}
+2025-05-28 11:05:23 | INFO     | corr:run:214 - 列名映射为：
+{'风速': '风速', '臭氧浓度': '臭氧浓度'}
+2025-05-28 11:05:23 | INFO     | corr:run:252 - Index(['站点', '季节', '臭氧浓度', '风速'], dtype='object')
+2025-05-28 11:05:23 | INFO     | corr:run:257 - 过滤条件映射为：
+{}
+2025-05-28 11:05:23 | INFO     | corr:run:263 - 分组列名映射为：
+[]
+2025-05-28 11:05:23 | INFO     | corr:run:264 - 相关性变量映射为：
+['臭氧浓度', '风速']
+2025-05-28 11:05:23 | INFO     | corr:run:280 - 开始计算相关性...
+2025-05-28 11:06:51 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 11:06:51 | INFO     | corr:run:202 - 成功读取数据！
+2025-05-28 11:06:51 | INFO     | corr:_get_columns_mapping:133 - 尝试第 1 次列名映射...
+2025-05-28 11:06:56 | INFO     | corr:_get_columns_mapping:150 - JSON解析成功！映射结果: {'风速': '风速', '站点': '站点', '臭氧浓度': '臭氧浓度', '季节': '季节'}
+2025-05-28 11:06:56 | INFO     | corr:run:214 - 列名映射为：
+{'风速': '风速', '站点': '站点', '臭氧浓度': '臭氧浓度', '季节': '季节'}
+2025-05-28 11:06:56 | INFO     | corr:run:240 - 【时间】字段不存在，自动匹配中...
+2025-05-28 11:06:56 | INFO     | corr:_get_columns_mapping:133 - 尝试第 1 次列名映射...
+2025-05-28 11:07:00 | INFO     | corr:_get_columns_mapping:150 - JSON解析成功！映射结果: {'时间': None}
+2025-05-28 11:07:00 | INFO     | corr:run:202 - 成功读取数据！
+2025-05-28 11:07:00 | INFO     | corr:_get_columns_mapping:133 - 尝试第 1 次列名映射...
+2025-05-28 11:07:03 | INFO     | corr:_get_columns_mapping:150 - JSON解析成功！映射结果: {'臭氧浓度': '臭氧浓度', '风速': '风速'}
+2025-05-28 11:07:03 | INFO     | corr:run:214 - 列名映射为：
+{'臭氧浓度': '臭氧浓度', '风速': '风速'}
+2025-05-28 11:07:03 | INFO     | corr:run:252 - Index(['站点', '季节', '臭氧浓度', '风速'], dtype='object')
+2025-05-28 11:07:03 | INFO     | corr:run:257 - 过滤条件映射为：
+{}
+2025-05-28 11:07:03 | INFO     | corr:run:263 - 分组列名映射为：
+[]
+2025-05-28 11:07:03 | INFO     | corr:run:264 - 相关性变量映射为：
+['臭氧浓度', '风速']
+2025-05-28 11:07:03 | INFO     | corr:run:280 - 开始计算相关性...
+2025-05-28 12:12:32 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 12:49:37 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 12:54:03 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 12:54:03 | INFO     | __main__:analyze_correlation:872 - 开始加载数据...
+2025-05-28 12:54:18 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 12:54:18 | INFO     | __main__:analyze_correlation:878 - 开始列名映射...
+2025-05-28 12:54:18 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 12:54:29 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风速': '风速(m/s)', '风向': '风向(°)', '站点': '站点'}
+2025-05-28 12:54:29 | INFO     | __main__:analyze_correlation:881 - 开始生成派生字段...
+2025-05-28 12:54:29 | INFO     | __main__:analyze_correlation:886 - 应用过滤条件...
+2025-05-28 12:54:29 | INFO     | __main__:analyze_correlation:893 - 开始计算两变量相关性...
+2025-05-28 12:54:29 | INFO     | __main__:analyze_correlation:912 - 相关性分析完成
+2025-05-28 12:59:54 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 12:59:54 | INFO     | __main__:analyze_correlation:872 - 开始加载数据...
+2025-05-28 13:00:07 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:00:07 | INFO     | __main__:analyze_correlation:878 - 开始列名映射...
+2025-05-28 13:00:07 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:00:15 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风速': '风速(m/s)', '风向': '风向(°)', '站点': '站点'}
+2025-05-28 13:00:15 | INFO     | __main__:analyze_correlation:881 - 开始生成派生字段...
+2025-05-28 13:00:15 | INFO     | __main__:analyze_correlation:886 - 应用过滤条件...
+2025-05-28 13:00:15 | INFO     | __main__:analyze_correlation:893 - 开始计算两变量相关性...
+2025-05-28 13:00:15 | INFO     | __main__:analyze_correlation:912 - 相关性分析完成
+2025-05-28 13:01:27 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:01:27 | INFO     | __main__:analyze_correlation:872 - 开始加载数据...
+2025-05-28 13:01:40 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:01:40 | INFO     | __main__:analyze_correlation:878 - 开始列名映射...
+2025-05-28 13:01:40 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:01:46 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'臭氧浓度': 'O3', '风向方位': None, '站点': '站点', '季节': None, '风速': '风速(m/s)'}
+2025-05-28 13:01:46 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:01:50 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 13:01:50 | INFO     | __main__:analyze_correlation:881 - 开始生成派生字段...
+2025-05-28 13:01:50 | INFO     | __main__:generate_required_fields:283 - 成功生成派生字段: 季节
+2025-05-28 13:01:50 | INFO     | __main__:_resolve_dependencies:303 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 13:01:50 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:01:55 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 13:01:55 | INFO     | __main__:generate_required_fields:283 - 成功生成派生字段: 风向方位
+2025-05-28 13:01:55 | INFO     | __main__:analyze_correlation:886 - 应用过滤条件...
+2025-05-28 13:01:55 | INFO     | __main__:analyze_correlation:893 - 开始计算两变量相关性...
+2025-05-28 13:01:55 | ERROR    | __main__:_calculate_grouped_correlation:587 - 分组相关性计算失败: '季节'
+2025-05-28 13:01:55 | ERROR    | __main__:analyze_correlation:916 - 相关性分析失败: '季节'
+2025-05-28 13:01:55 | ERROR    | __main__:correlation_analysis:1050 - 相关性分析失败: '季节'
+2025-05-28 13:09:09 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:09:09 | INFO     | __main__:analyze_correlation:872 - 开始加载数据...
+2025-05-28 13:09:22 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:09:22 | INFO     | __main__:analyze_correlation:878 - 开始列名映射...
+2025-05-28 13:09:22 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:09:32 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'臭氧浓度': 'O3', '风向方位': None, '季节': None, '风速': '风速(m/s)'}
+2025-05-28 13:09:32 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:09:34 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 13:09:34 | INFO     | __main__:analyze_correlation:881 - 开始生成派生字段...
+2025-05-28 13:09:34 | INFO     | __main__:generate_required_fields:283 - 成功生成派生字段: 季节
+2025-05-28 13:09:34 | INFO     | __main__:_resolve_dependencies:303 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 13:09:34 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:09:36 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 13:09:37 | INFO     | __main__:generate_required_fields:283 - 成功生成派生字段: 风向方位
+2025-05-28 13:09:37 | INFO     | __main__:analyze_correlation:886 - 应用过滤条件...
+2025-05-28 13:09:37 | INFO     | __main__:analyze_correlation:893 - 开始计算两变量相关性...
+2025-05-28 13:09:37 | ERROR    | __main__:_calculate_grouped_correlation:587 - 分组相关性计算失败: '风向方位'
+2025-05-28 13:09:37 | ERROR    | __main__:analyze_correlation:916 - 相关性分析失败: '风向方位'
+2025-05-28 13:09:37 | ERROR    | __main__:correlation_analysis:1050 - 相关性分析失败: '风向方位'
+2025-05-28 13:10:51 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:10:51 | INFO     | __main__:analyze_correlation:872 - 开始加载数据...
+2025-05-28 13:11:03 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:11:03 | INFO     | __main__:analyze_correlation:878 - 开始列名映射...
+2025-05-28 13:11:03 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:11:11 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'臭氧浓度': 'O3', '风向方位': None, '站点': '站点', '季节': None, '风速': '风速(m/s)'}
+2025-05-28 13:11:11 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:11:14 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 13:11:14 | INFO     | __main__:analyze_correlation:881 - 开始生成派生字段...
+2025-05-28 13:11:14 | INFO     | __main__:generate_required_fields:283 - 成功生成派生字段: 季节
+2025-05-28 13:11:14 | INFO     | __main__:_resolve_dependencies:303 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 13:11:14 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:11:18 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 13:11:19 | INFO     | __main__:generate_required_fields:283 - 成功生成派生字段: 风向方位
+2025-05-28 13:11:19 | INFO     | __main__:analyze_correlation:886 - 应用过滤条件...
+2025-05-28 13:11:19 | INFO     | __main__:analyze_correlation:893 - 开始计算两变量相关性...
+2025-05-28 13:11:19 | ERROR    | __main__:_calculate_grouped_correlation:587 - 分组相关性计算失败: '风向方位'
+2025-05-28 13:11:19 | ERROR    | __main__:analyze_correlation:916 - 相关性分析失败: '风向方位'
+2025-05-28 13:11:19 | ERROR    | __main__:correlation_analysis:1050 - 相关性分析失败: '风向方位'
+2025-05-28 13:13:40 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:14:08 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:14:08 | INFO     | __main__:analyze_correlation:872 - 开始加载数据...
+2025-05-28 13:14:22 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:14:22 | INFO     | __main__:analyze_correlation:878 - 开始列名映射...
+2025-05-28 13:14:22 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:14:28 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风速': '风速(m/s)', '站点': '站点', '季节': None, '臭氧浓度': 'O3', '风向': '风向(°)'}
+2025-05-28 13:14:28 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:14:31 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': '季节'}
+2025-05-28 13:14:31 | INFO     | __main__:analyze_correlation:881 - 开始生成派生字段...
+2025-05-28 13:14:31 | INFO     | __main__:generate_required_fields:283 - 成功生成派生字段: 季节
+2025-05-28 13:14:31 | INFO     | __main__:analyze_correlation:886 - 应用过滤条件...
+2025-05-28 13:14:31 | INFO     | __main__:analyze_correlation:894 - 开始计算两变量相关性...
+2025-05-28 13:14:31 | ERROR    | __main__:_calculate_grouped_correlation:587 - 分组相关性计算失败: '季节'
+2025-05-28 13:14:31 | ERROR    | __main__:analyze_correlation:917 - 相关性分析失败: '季节'
+2025-05-28 13:14:31 | ERROR    | __main__:correlation_analysis:1051 - 相关性分析失败: '季节'
+2025-05-28 13:19:06 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:19:50 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:19:50 | INFO     | __main__:analyze_correlation:872 - 开始加载数据...
+2025-05-28 13:20:04 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:20:04 | INFO     | __main__:analyze_correlation:878 - 开始列名映射...
+2025-05-28 13:20:04 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:20:17 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风速': '风速(m/s)', '站点': '站点', '风向': '风向(°)', '季节': None, '臭氧浓度': 'O3'}
+2025-05-28 13:20:17 | INFO     | __main__:_get_all_column_mappings:971 - 需要处理的派生字段: ['季节']
+2025-05-28 13:20:17 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:20:19 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': '季节'}
+2025-05-28 13:20:19 | INFO     | __main__:_get_all_column_mappings:981 - 派生字段映射: 季节 -> 季节
+2025-05-28 13:20:19 | INFO     | __main__:_get_all_column_mappings:983 - 最终列名映射: {'风速': '风速(m/s)', '站点': '站点', '风向': '风向(°)', '季节': '季节', '臭氧浓度': 'O3'}
+2025-05-28 13:20:19 | INFO     | __main__:analyze_correlation:881 - 开始生成派生字段...
+2025-05-28 13:20:19 | INFO     | __main__:generate_required_fields:283 - 成功生成派生字段: 季节
+2025-05-28 13:20:19 | INFO     | __main__:analyze_correlation:886 - 应用过滤条件...
+2025-05-28 13:20:19 | INFO     | __main__:analyze_correlation:914 - 开始计算两变量相关性...
+2025-05-28 13:20:19 | ERROR    | __main__:_calculate_grouped_correlation:587 - 分组相关性计算失败: '风向(°)'
+2025-05-28 13:20:19 | ERROR    | __main__:analyze_correlation:937 - 相关性分析失败: '风向(°)'
+2025-05-28 13:20:19 | ERROR    | __main__:correlation_analysis:1076 - 相关性分析失败: '风向(°)'
+2025-05-28 13:22:30 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:23:12 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:23:12 | INFO     | __main__:analyze_correlation:894 - 开始加载数据...
+2025-05-28 13:23:27 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:23:27 | INFO     | __main__:analyze_correlation:900 - 开始列名映射...
+2025-05-28 13:23:27 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:23:31 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)', '站点': '站点', '季节': None, '风速': '风速(m/s)', '臭氧浓度': 'O3'}
+2025-05-28 13:23:31 | INFO     | __main__:_get_all_column_mappings:993 - 需要处理的派生字段: ['季节']
+2025-05-28 13:23:31 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:23:36 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': '季节'}
+2025-05-28 13:23:36 | INFO     | __main__:_get_all_column_mappings:1003 - 派生字段映射: 季节 -> 季节
+2025-05-28 13:23:36 | INFO     | __main__:_get_all_column_mappings:1005 - 最终列名映射: {'风向': '风向(°)', '站点': '站点', '季节': '季节', '风速': '风速(m/s)', '臭氧浓度': 'O3'}
+2025-05-28 13:23:36 | INFO     | __main__:analyze_correlation:903 - 开始生成派生字段...
+2025-05-28 13:23:36 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['季节']
+2025-05-28 13:23:36 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 13:23:36 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 13:23:36 | INFO     | __main__:analyze_correlation:908 - 应用过滤条件...
+2025-05-28 13:23:36 | INFO     | __main__:analyze_correlation:936 - 开始计算两变量相关性...
+2025-05-28 13:23:36 | ERROR    | __main__:_calculate_grouped_correlation:609 - 分组相关性计算失败: '季节'
+2025-05-28 13:23:36 | ERROR    | __main__:analyze_correlation:959 - 相关性分析失败: '季节'
+2025-05-28 13:23:36 | ERROR    | __main__:correlation_analysis:1098 - 相关性分析失败: '季节'
+2025-05-28 13:23:52 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:24:32 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:24:32 | INFO     | __main__:analyze_correlation:894 - 开始加载数据...
+2025-05-28 13:24:47 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:24:47 | INFO     | __main__:analyze_correlation:900 - 开始列名映射...
+2025-05-28 13:24:47 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:24:57 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'站点': '站点', '风向方位': None, '臭氧浓度': 'O3', '风速': '风速(m/s)', '季节': None}
+2025-05-28 13:24:57 | INFO     | __main__:_get_all_column_mappings:993 - 需要处理的派生字段: ['风向方位', '季节']
+2025-05-28 13:24:57 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:25:01 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 13:25:01 | INFO     | __main__:_get_all_column_mappings:1003 - 派生字段映射: 风向方位 -> 风向方位
+2025-05-28 13:25:01 | INFO     | __main__:_get_all_column_mappings:1003 - 派生字段映射: 季节 -> 季节
+2025-05-28 13:25:01 | INFO     | __main__:_get_all_column_mappings:1005 - 最终列名映射: {'站点': '站点', '风向方位': '风向方位', '臭氧浓度': 'O3', '风速': '风速(m/s)', '季节': '季节'}
+2025-05-28 13:25:01 | INFO     | __main__:analyze_correlation:903 - 开始生成派生字段...
+2025-05-28 13:25:01 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['风向方位', '季节']
+2025-05-28 13:25:01 | INFO     | __main__:_resolve_dependencies:323 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 13:25:01 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:25:04 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 13:25:04 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 风向 -> 风向(°)
+2025-05-28 13:25:04 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 风向方位
+2025-05-28 13:25:04 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 13:25:04 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 13:25:04 | INFO     | __main__:analyze_correlation:908 - 应用过滤条件...
+2025-05-28 13:25:05 | INFO     | __main__:analyze_correlation:936 - 开始计算两变量相关性...
+2025-05-28 13:25:05 | ERROR    | __main__:_calculate_grouped_correlation:609 - 分组相关性计算失败: '风向方位'
+2025-05-28 13:25:05 | ERROR    | __main__:analyze_correlation:959 - 相关性分析失败: '风向方位'
+2025-05-28 13:25:05 | ERROR    | __main__:correlation_analysis:1098 - 相关性分析失败: '风向方位'
+2025-05-28 13:32:05 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:32:55 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:32:55 | INFO     | __main__:analyze_correlation:911 - 开始加载数据...
+2025-05-28 13:33:10 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:33:10 | INFO     | __main__:analyze_correlation:917 - 开始列名映射...
+2025-05-28 13:33:10 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:33:19 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'臭氧浓度': 'O3', '季节': None, '风速': '风速(m/s)', '站点': '站点', '风向': '风向(°)'}
+2025-05-28 13:33:19 | INFO     | __main__:_get_all_column_mappings:1010 - 需要处理的派生字段: ['季节']
+2025-05-28 13:33:19 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:33:21 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': '季节'}
+2025-05-28 13:33:21 | INFO     | __main__:_get_all_column_mappings:1020 - 派生字段映射: 季节 -> 季节
+2025-05-28 13:33:21 | INFO     | __main__:_get_all_column_mappings:1022 - 最终列名映射: {'臭氧浓度': 'O3', '季节': '季节', '风速': '风速(m/s)', '站点': '站点', '风向': '风向(°)'}
+2025-05-28 13:33:21 | INFO     | __main__:analyze_correlation:920 - 开始生成派生字段...
+2025-05-28 13:33:21 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['季节']
+2025-05-28 13:33:21 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 13:33:21 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 13:33:21 | INFO     | __main__:analyze_correlation:925 - 应用过滤条件...
+2025-05-28 13:33:21 | INFO     | __main__:analyze_correlation:953 - 开始计算两变量相关性...
+2025-05-28 13:33:21 | INFO     | __main__:_calculate_grouped_correlation:592 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['季节', '风向(°)']
+2025-05-28 13:33:21 | INFO     | __main__:_calculate_grouped_correlation:593 - 数据框列名: ['风速(m/s)', 'O3']
+2025-05-28 13:33:21 | INFO     | __main__:_calculate_grouped_correlation:594 - 数据框形状: (8450, 2)
+2025-05-28 13:33:21 | ERROR    | __main__:_calculate_grouped_correlation:625 - 分组相关性计算失败: 以下列在数据框中不存在: ['季节', '风向(°)']
+2025-05-28 13:33:21 | ERROR    | __main__:_calculate_grouped_correlation:626 - 错误详情: var1=风速(m/s), var2=O3, group_by=['季节', '风向(°)']
+2025-05-28 13:33:21 | ERROR    | __main__:analyze_correlation:976 - 相关性分析失败: 以下列在数据框中不存在: ['季节', '风向(°)']
+2025-05-28 13:33:21 | ERROR    | __main__:correlation_analysis:1115 - 相关性分析失败: 以下列在数据框中不存在: ['季节', '风向(°)']
+2025-05-28 13:35:04 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:36:31 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:36:31 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:36:31 | INFO     | server.corr_final:analyze_correlation:925 - 开始加载数据...
+2025-05-28 13:36:31 | ERROR    | server.corr_final:load_data:88 - 数据加载失败: 文件加载失败: 文件不存在: /home/work/disk1/LLM-ljw/agent/analysis-agent/data/air_quality_data.csv
+2025-05-28 13:36:31 | ERROR    | server.corr_final:analyze_correlation:990 - 相关性分析失败: 数据加载失败: 文件加载失败: 文件不存在: /home/work/disk1/LLM-ljw/agent/analysis-agent/data/air_quality_data.csv
+2025-05-28 13:36:31 | ERROR    | server.corr_final:correlation_analysis:1129 - 相关性分析失败: 数据加载失败: 文件加载失败: 文件不存在: /home/work/disk1/LLM-ljw/agent/analysis-agent/data/air_quality_data.csv
+2025-05-28 13:38:24 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:39:00 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:39:00 | INFO     | __main__:analyze_correlation:925 - 开始加载数据...
+2025-05-28 13:39:15 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:39:15 | INFO     | __main__:analyze_correlation:931 - 开始列名映射...
+2025-05-28 13:39:15 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:39:22 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)', '风速': '风速(m/s)', '臭氧浓度': 'O3', '季节': None}
+2025-05-28 13:39:22 | INFO     | __main__:_get_all_column_mappings:1024 - 需要处理的派生字段: ['季节']
+2025-05-28 13:39:22 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:39:25 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': '季节'}
+2025-05-28 13:39:25 | INFO     | __main__:_get_all_column_mappings:1034 - 派生字段映射: 季节 -> 季节
+2025-05-28 13:39:25 | INFO     | __main__:_get_all_column_mappings:1036 - 最终列名映射: {'风向': '风向(°)', '风速': '风速(m/s)', '臭氧浓度': 'O3', '季节': '季节'}
+2025-05-28 13:39:25 | INFO     | __main__:analyze_correlation:934 - 开始生成派生字段...
+2025-05-28 13:39:25 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['季节']
+2025-05-28 13:39:25 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 13:39:25 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 13:39:25 | INFO     | __main__:analyze_correlation:939 - 应用过滤条件...
+2025-05-28 13:39:25 | INFO     | __main__:analyze_correlation:967 - 开始计算两变量相关性...
+2025-05-28 13:39:25 | INFO     | __main__:_calculate_grouped_correlation:606 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['季节', '风向(°)']
+2025-05-28 13:39:25 | INFO     | __main__:_calculate_grouped_correlation:607 - 数据框列名: ['风速(m/s)', 'O3', '季节', '风向(°)']
+2025-05-28 13:39:25 | INFO     | __main__:_calculate_grouped_correlation:608 - 数据框形状: (83983, 4)
+2025-05-28 13:39:26 | INFO     | __main__:_calculate_grouped_correlation:620 - 分组成功，共有 13863 个分组
+2025-05-28 13:39:37 | INFO     | __main__:analyze_correlation:986 - 相关性分析完成
+2025-05-28 13:42:27 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:43:03 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:43:03 | INFO     | __main__:analyze_correlation:925 - 开始加载数据...
+2025-05-28 13:43:17 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:43:17 | INFO     | __main__:analyze_correlation:931 - 开始列名映射...
+2025-05-28 13:43:17 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:43:22 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向(16方位)', '站点': '站点', '风速': '风速(m/s)', '臭氧浓度': 'O3', '季节': None}
+2025-05-28 13:43:22 | INFO     | __main__:_get_all_column_mappings:1024 - 需要处理的派生字段: ['季节']
+2025-05-28 13:43:22 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:43:24 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': '季节'}
+2025-05-28 13:43:24 | INFO     | __main__:_get_all_column_mappings:1034 - 派生字段映射: 季节 -> 季节
+2025-05-28 13:43:24 | INFO     | __main__:_get_all_column_mappings:1036 - 最终列名映射: {'风向方位': '风向(16方位)', '站点': '站点', '风速': '风速(m/s)', '臭氧浓度': 'O3', '季节': '季节'}
+2025-05-28 13:43:24 | INFO     | __main__:analyze_correlation:934 - 开始生成派生字段...
+2025-05-28 13:43:24 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['季节']
+2025-05-28 13:43:24 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 13:43:24 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 13:43:24 | INFO     | __main__:analyze_correlation:939 - 应用过滤条件...
+2025-05-28 13:43:24 | ERROR    | __main__:analyze_correlation:990 - 相关性分析失败: 以下列在数据中不存在: ['风向(16方位)']
+2025-05-28 13:43:24 | ERROR    | __main__:correlation_analysis:1129 - 相关性分析失败: 以下列在数据中不存在: ['风向(16方位)']
+2025-05-28 13:44:46 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:45:13 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:45:13 | INFO     | __main__:analyze_correlation:925 - 开始加载数据...
+2025-05-28 13:45:28 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:45:28 | INFO     | __main__:analyze_correlation:931 - 开始列名映射...
+2025-05-28 13:45:28 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:45:33 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': None, '风速': '风速(m/s)', '风向': '风向(°)', '站点': '站点', '臭氧浓度': 'O3'}
+2025-05-28 13:45:33 | INFO     | __main__:_get_all_column_mappings:1024 - 需要处理的派生字段: ['季节']
+2025-05-28 13:45:33 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:45:36 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': '季节'}
+2025-05-28 13:45:36 | INFO     | __main__:_get_all_column_mappings:1034 - 派生字段映射: 季节 -> 季节
+2025-05-28 13:45:36 | INFO     | __main__:_get_all_column_mappings:1036 - 最终列名映射: {'季节': '季节', '风速': '风速(m/s)', '风向': '风向(°)', '站点': '站点', '臭氧浓度': 'O3'}
+2025-05-28 13:45:36 | INFO     | __main__:analyze_correlation:934 - 开始生成派生字段...
+2025-05-28 13:45:36 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['季节']
+2025-05-28 13:45:36 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 13:45:36 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 13:45:36 | INFO     | __main__:analyze_correlation:939 - 应用过滤条件...
+2025-05-28 13:45:36 | INFO     | __main__:analyze_correlation:967 - 开始计算两变量相关性...
+2025-05-28 13:45:36 | INFO     | __main__:_calculate_grouped_correlation:606 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['季节', '风向(°)']
+2025-05-28 13:45:36 | INFO     | __main__:_calculate_grouped_correlation:607 - 数据框列名: ['风速(m/s)', 'O3', '季节', '风向(°)']
+2025-05-28 13:45:36 | INFO     | __main__:_calculate_grouped_correlation:608 - 数据框形状: (8450, 4)
+2025-05-28 13:45:36 | INFO     | __main__:_calculate_grouped_correlation:620 - 分组成功，共有 166 个分组
+2025-05-28 13:45:36 | INFO     | __main__:analyze_correlation:986 - 相关性分析完成
+2025-05-28 13:46:43 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:47:15 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:47:15 | INFO     | __main__:analyze_correlation:925 - 开始加载数据...
+2025-05-28 13:47:29 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:47:29 | INFO     | __main__:analyze_correlation:931 - 开始列名映射...
+2025-05-28 13:47:29 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:47:37 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'站点': '站点', '风速': '风速(m/s)', '风向方位': None, '季节': None, '臭氧浓度': 'O3'}
+2025-05-28 13:47:37 | INFO     | __main__:_get_all_column_mappings:1024 - 需要处理的派生字段: ['风向方位', '季节']
+2025-05-28 13:47:37 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:47:41 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 13:47:41 | INFO     | __main__:_get_all_column_mappings:1034 - 派生字段映射: 风向方位 -> 风向方位
+2025-05-28 13:47:41 | INFO     | __main__:_get_all_column_mappings:1034 - 派生字段映射: 季节 -> 季节
+2025-05-28 13:47:41 | INFO     | __main__:_get_all_column_mappings:1036 - 最终列名映射: {'站点': '站点', '风速': '风速(m/s)', '风向方位': '风向方位', '季节': '季节', '臭氧浓度': 'O3'}
+2025-05-28 13:47:41 | INFO     | __main__:analyze_correlation:934 - 开始生成派生字段...
+2025-05-28 13:47:41 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['风向方位', '季节']
+2025-05-28 13:47:41 | INFO     | __main__:_resolve_dependencies:323 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 13:47:41 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:48:06 | ERROR    | __main__:get_column_mapping:204 - JSON解析错误 (尝试 1/3): 无法解析JSON: 在用户意图是“风向”且列名中存在“风向(°)”的情况下，需要根据以下分析决定是否进行映射：
+
+1. **列名匹配规则**：根据示例，当用户意图与列名完全匹配时（如“风向”和列名“风向”），才会成功映射。但当前列名是“风向(°)”，不完全匹配“风向”。
+
+2. **注意事项中的区分**：用户明确指出需区分“风向”（方向，如东北风）与“风向(°)”（角度，如45°）。两者属于不同维度，不能混淆。
+
+3. **映射可能性**：尽管“风向(°)”包含“风向”这个词，但其附加的“(°)”明确表示角度单位，属于不同语义。若强行映射，可能引发数据误解。
+
+4. **严格匹配要求**：根据示例的严格规则，若列名中没有与用户意图完全一致的字段（如“风向”），则无法匹配，需设为null。
+
+**结论**：由于用户意图“风向”与列名“风向(°)”在语义上存在本质区别（方向 vs 角度），且列名中没有完全匹配的“风向”字段，因此应将“风向”映射为null。若系统设计允许近似匹配或需进一步澄清用户意图，可考虑额外处理，但基于当前规则，直接设为null更符合规范。: line 1 column 1 (char 0)
+2025-05-28 13:48:06 | INFO     | __main__:get_column_mapping:190 - 尝试第 2 次列名映射...
+2025-05-28 13:48:09 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 13:48:09 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 风向 -> 风向(°)
+2025-05-28 13:48:09 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 风向方位
+2025-05-28 13:48:09 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 13:48:09 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 13:48:09 | INFO     | __main__:analyze_correlation:939 - 应用过滤条件...
+2025-05-28 13:48:10 | INFO     | __main__:analyze_correlation:967 - 开始计算两变量相关性...
+2025-05-28 13:48:10 | INFO     | __main__:_calculate_grouped_correlation:606 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['季节', '风向方位']
+2025-05-28 13:48:10 | INFO     | __main__:_calculate_grouped_correlation:607 - 数据框列名: ['风速(m/s)', 'O3', '季节', '风向方位']
+2025-05-28 13:48:10 | INFO     | __main__:_calculate_grouped_correlation:608 - 数据框形状: (8450, 4)
+2025-05-28 13:48:10 | INFO     | __main__:_calculate_grouped_correlation:620 - 分组成功，共有 20 个分组
+2025-05-28 13:48:10 | INFO     | __main__:analyze_correlation:986 - 相关性分析完成
+2025-05-28 13:58:47 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:59:25 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 13:59:25 | INFO     | __main__:analyze_correlation:925 - 开始加载数据...
+2025-05-28 13:59:40 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 13:59:40 | INFO     | __main__:analyze_correlation:931 - 开始列名映射...
+2025-05-28 13:59:40 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:59:47 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'臭氧浓度': 'O3', '站点': '站点', '季节': None, '风速': '风速(m/s)', '风向': '风向(°)'}
+2025-05-28 13:59:47 | INFO     | __main__:_get_all_column_mappings:1024 - 需要处理的派生字段: ['季节']
+2025-05-28 13:59:47 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 13:59:49 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': '季节'}
+2025-05-28 13:59:49 | INFO     | __main__:_get_all_column_mappings:1034 - 派生字段映射: 季节 -> 季节
+2025-05-28 13:59:49 | INFO     | __main__:_get_all_column_mappings:1036 - 最终列名映射: {'臭氧浓度': 'O3', '站点': '站点', '季节': '季节', '风速': '风速(m/s)', '风向': '风向(°)'}
+2025-05-28 13:59:49 | INFO     | __main__:analyze_correlation:934 - 开始生成派生字段...
+2025-05-28 13:59:50 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['季节']
+2025-05-28 13:59:50 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 13:59:50 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 13:59:50 | INFO     | __main__:analyze_correlation:939 - 应用过滤条件...
+2025-05-28 13:59:50 | INFO     | __main__:analyze_correlation:967 - 开始计算两变量相关性...
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:606 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['季节', '风向(°)']
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:607 - 数据框列名: ['风速(m/s)', 'O3', '季节', '风向(°)']
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:608 - 数据框形状: (8450, 4)
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:620 - 分组成功，共有 166 个分组
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 冬 - 0.0 相关性: 0.219
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 冬 - 360.0 相关性: 0.0
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 夏 - 0.0 相关性: 0.193
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 12.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 13.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 16.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 19.6 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 30.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 38.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 56.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 62.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 67.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 71.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 73.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 78.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 81.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 84.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 86.0 数据不足: 2行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 86.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 94.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 95.6 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 97.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 100.6 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 102.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 106.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 107.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 110.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 112.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 115.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 121.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 124.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 125.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 126.0 数据不足: 2行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 126.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 126.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 141.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 143.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 143.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 145.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 151.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 152.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 155.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 185.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 204.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 213.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 222.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 228.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 242.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 243.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 244.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 245.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 245.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 246.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 246.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 248.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 248.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 249.6 数据不足: 2行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 251.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 259.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 259.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 261.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 262.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 263.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 263.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 264.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 265.9 数据不足: 2行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 271.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 271.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 273.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 273.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 274.6 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 275.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 276.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 277.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 277.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 278.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 278.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 280.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 280.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 282.6 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 283.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 284.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 286.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 286.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 287.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 288.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 288.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 289.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 292.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 294.0 数据不足: 4行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 295.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 297.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 301.0 数据不足: 2行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 301.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 302.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 302.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 303.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 305.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 307.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 309.0 数据不足: 2行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 311.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 312.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 312.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 314.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 315.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 315.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 318.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 321.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 325.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 327.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 330.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 335.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 335.6 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 344.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 345.3 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 347.6 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 347.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 355.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 357.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 358.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 359.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 夏 - 360.0 相关性: 0.0
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 春 - 0.0 相关性: 0.004
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 14.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 32.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 63.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 234.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 238.2 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 250.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 255.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 267.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 272.7 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 278.6 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 282.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 284.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 288.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 290.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 303.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 321.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 338.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 341.4 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 344.0 数据不足: 2行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 346.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 348.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 350.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 355.0 数据不足: 5行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 355.1 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 359.9 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 春 - 360.0 相关性: 0.0
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 秋 - 0.0 相关性: 0.115
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 12.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 114.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 163.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 215.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 216.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 240.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 240.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 241.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 243.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 244.0 数据不足: 3行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 261.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 282.0 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 312.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 314.5 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 358.8 数据不足: 1行
+2025-05-28 13:59:50 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 秋 - 360.0 相关性: 0.0
+2025-05-28 13:59:50 | INFO     | __main__:analyze_correlation:986 - 相关性分析完成
+2025-05-28 14:02:00 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:02:00 | INFO     | __main__:analyze_correlation:925 - 开始加载数据...
+2025-05-28 14:02:12 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 14:02:12 | INFO     | __main__:analyze_correlation:931 - 开始列名映射...
+2025-05-28 14:02:12 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:02:19 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'臭氧浓度': 'O3', '站点': '站点', '季节': None, '风速': '风速(m/s)', '风向': '风向(°)'}
+2025-05-28 14:02:19 | INFO     | __main__:_get_all_column_mappings:1024 - 需要处理的派生字段: ['季节']
+2025-05-28 14:02:19 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:02:22 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'季节': '季节'}
+2025-05-28 14:02:22 | INFO     | __main__:_get_all_column_mappings:1034 - 派生字段映射: 季节 -> 季节
+2025-05-28 14:02:22 | INFO     | __main__:_get_all_column_mappings:1036 - 最终列名映射: {'臭氧浓度': 'O3', '站点': '站点', '季节': '季节', '风速': '风速(m/s)', '风向': '风向(°)'}
+2025-05-28 14:02:22 | INFO     | __main__:analyze_correlation:934 - 开始生成派生字段...
+2025-05-28 14:02:22 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['季节']
+2025-05-28 14:02:22 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 14:02:22 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 14:02:22 | INFO     | __main__:analyze_correlation:939 - 应用过滤条件...
+2025-05-28 14:02:22 | INFO     | __main__:analyze_correlation:967 - 开始计算两变量相关性...
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:606 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['季节', '风向(°)']
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:607 - 数据框列名: ['风速(m/s)', 'O3', '季节', '风向(°)']
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:608 - 数据框形状: (8450, 4)
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:620 - 分组成功，共有 166 个分组
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 冬 - 0.0 相关性: 0.219
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 冬 - 360.0 相关性: 0.0
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 夏 - 0.0 相关性: 0.193
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 12.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 13.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 16.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 19.6 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 30.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 38.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 56.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 62.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 67.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 71.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 73.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 78.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 81.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 84.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 86.0 数据不足: 2行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 86.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 94.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 95.6 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 97.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 100.6 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 102.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 106.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 107.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 110.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 112.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 115.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 121.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 124.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 125.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 126.0 数据不足: 2行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 126.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 126.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 141.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 143.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 143.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 145.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 151.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 152.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 155.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 185.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 204.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 213.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 222.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 228.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 242.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 243.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 244.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 245.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 245.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 246.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 246.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 248.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 248.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 249.6 数据不足: 2行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 251.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 259.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 259.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 261.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 262.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 263.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 263.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 264.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 265.9 数据不足: 2行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 271.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 271.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 273.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 273.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 274.6 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 275.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 276.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 277.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 277.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 278.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 278.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 280.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 280.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 282.6 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 283.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 284.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 286.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 286.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 287.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 288.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 288.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 289.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 292.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 294.0 数据不足: 4行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 295.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 297.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 301.0 数据不足: 2行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 301.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 302.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 302.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 303.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 305.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 307.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 309.0 数据不足: 2行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 311.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 312.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 312.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 314.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 315.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 315.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 318.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 321.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 325.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 327.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 330.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 335.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 335.6 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 344.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 345.3 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 347.6 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 347.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 355.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 357.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 358.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 359.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 夏 - 360.0 相关性: 0.0
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 春 - 0.0 相关性: 0.004
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 14.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 32.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 63.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 234.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 238.2 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 250.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 255.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 267.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 272.7 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 278.6 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 282.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 284.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 288.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 290.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 303.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 321.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 338.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 341.4 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 344.0 数据不足: 2行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 346.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 348.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 350.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 355.0 数据不足: 5行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 355.1 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 359.9 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 春 - 360.0 相关性: 0.0
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 秋 - 0.0 相关性: 0.115
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 12.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 114.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 163.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 215.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 216.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 240.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 240.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 241.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 243.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 244.0 数据不足: 3行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 261.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 282.0 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 312.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 314.5 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 358.8 数据不足: 1行
+2025-05-28 14:02:22 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 秋 - 360.0 相关性: 0.0
+2025-05-28 14:02:22 | INFO     | __main__:analyze_correlation:986 - 相关性分析完成
+2025-05-28 14:05:06 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:05:51 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:05:51 | INFO     | __main__:analyze_correlation:925 - 开始加载数据...
+2025-05-28 14:06:06 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 14:06:06 | INFO     | __main__:analyze_correlation:931 - 开始列名映射...
+2025-05-28 14:06:06 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:06:15 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': None, '风速': '风速(m/s)', '站点': '站点', '季节': None, '臭氧浓度': 'O3'}
+2025-05-28 14:06:15 | INFO     | __main__:_get_all_column_mappings:1024 - 需要处理的派生字段: ['风向方位', '季节']
+2025-05-28 14:06:15 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:06:17 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 14:06:17 | INFO     | __main__:_get_all_column_mappings:1034 - 派生字段映射: 风向方位 -> 风向方位
+2025-05-28 14:06:17 | INFO     | __main__:_get_all_column_mappings:1034 - 派生字段映射: 季节 -> 季节
+2025-05-28 14:06:17 | INFO     | __main__:_get_all_column_mappings:1036 - 最终列名映射: {'风向方位': '风向方位', '风速': '风速(m/s)', '站点': '站点', '季节': '季节', '臭氧浓度': 'O3'}
+2025-05-28 14:06:17 | INFO     | __main__:analyze_correlation:934 - 开始生成派生字段...
+2025-05-28 14:06:18 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['风向方位', '季节']
+2025-05-28 14:06:18 | INFO     | __main__:_resolve_dependencies:323 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 14:06:18 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:06:21 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 14:06:21 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 风向 -> 风向(°)
+2025-05-28 14:06:21 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 风向方位
+2025-05-28 14:06:21 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 14:06:21 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 14:06:21 | INFO     | __main__:analyze_correlation:939 - 应用过滤条件...
+2025-05-28 14:06:21 | INFO     | __main__:analyze_correlation:967 - 开始计算两变量相关性...
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:606 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['季节', '风向方位']
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:607 - 数据框列名: ['风速(m/s)', 'O3', '季节', '风向方位']
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:608 - 数据框形状: (8450, 4)
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:620 - 分组成功，共有 20 个分组
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 冬 - 北 相关性: 0.305
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 东 数据不足: 16行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 东北 数据不足: 5行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 东南 数据不足: 16行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 夏 - 北 相关性: 0.256
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 南 数据不足: 1行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 夏 - 西 相关性: 0.457
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 西北 数据不足: 29行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 夏 - 西南 数据不足: 11行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 东北 数据不足: 2行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 春 - 北 相关性: 0.078
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 西 数据不足: 9行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 西北 数据不足: 2行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 春 - 西南 数据不足: 2行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 东南 数据不足: 1行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:633 - 分组 秋 - 北 相关性: 0.143
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 南 数据不足: 1行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 西 数据不足: 2行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 西北 数据不足: 2行
+2025-05-28 14:06:21 | INFO     | __main__:_calculate_grouped_correlation:628 - 分组 秋 - 西南 数据不足: 9行
+2025-05-28 14:06:21 | INFO     | __main__:analyze_correlation:986 - 相关性分析完成
+2025-05-28 14:11:05 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:11:35 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:11:35 | INFO     | __main__:analyze_correlation:933 - 开始加载数据...
+2025-05-28 14:11:50 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 14:11:50 | INFO     | __main__:analyze_correlation:939 - 开始列名映射...
+2025-05-28 14:11:50 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:12:00 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': None, '风速': '风速(m/s)', '季节': None, '臭氧浓度': 'O3'}
+2025-05-28 14:12:00 | INFO     | __main__:_get_all_column_mappings:1032 - 需要处理的派生字段: ['风向方位', '季节']
+2025-05-28 14:12:00 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:12:03 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 14:12:03 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 风向方位 -> 风向方位
+2025-05-28 14:12:03 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 季节 -> 季节
+2025-05-28 14:12:03 | INFO     | __main__:_get_all_column_mappings:1044 - 最终列名映射: {'风向方位': '风向方位', '风速': '风速(m/s)', '季节': '季节', '臭氧浓度': 'O3'}
+2025-05-28 14:12:03 | INFO     | __main__:analyze_correlation:942 - 开始生成派生字段...
+2025-05-28 14:12:03 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['风向方位', '季节']
+2025-05-28 14:12:03 | INFO     | __main__:_resolve_dependencies:323 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 14:12:03 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:12:10 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 14:12:10 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 风向 -> 风向(°)
+2025-05-28 14:12:10 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 风向方位
+2025-05-28 14:12:10 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 14:12:10 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 14:12:10 | INFO     | __main__:analyze_correlation:947 - 应用过滤条件...
+2025-05-28 14:12:10 | INFO     | __main__:analyze_correlation:975 - 开始计算两变量相关性...
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:610 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['风向方位', '季节']
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:611 - 数据框列名: ['风速(m/s)', 'O3', '风向方位', '季节']
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:612 - 数据框形状: (83983, 4)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:624 - 分组成功，共有 32 个分组
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东 - 冬 相关性: 0.227 (基于2315行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东 - 夏 相关性: 0.102 (基于1878行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东 - 春 相关性: 0.098 (基于2085行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东 - 秋 相关性: 0.375 (基于2299行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东北 - 冬 相关性: 0.28 (基于1154行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东北 - 夏 相关性: 0.304 (基于1418行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东北 - 春 相关性: 0.347 (基于1285行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东北 - 秋 相关性: 0.329 (基于1304行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东南 - 冬 相关性: 0.254 (基于2102行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东南 - 夏 相关性: 0.199 (基于2499行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东南 - 春 相关性: 0.235 (基于2290行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东南 - 秋 相关性: 0.308 (基于3215行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 冬 相关性: 0.304 (基于7369行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 夏 相关性: 0.273 (基于8000行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 春 相关性: 0.229 (基于8105行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 秋 相关性: 0.312 (基于6474行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 南 - 冬 相关性: 0.243 (基于1787行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 南 - 夏 相关性: 0.153 (基于2305行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 南 - 春 相关性: 0.222 (基于2308行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 南 - 秋 相关性: 0.259 (基于2148行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西 - 冬 相关性: 0.529 (基于1752行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西 - 夏 相关性: 0.474 (基于1587行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西 - 春 相关性: 0.469 (基于1589行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西 - 秋 相关性: 0.456 (基于1679行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西北 - 冬 相关性: 0.473 (基于2463行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西北 - 夏 相关性: 0.36 (基于1799行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西北 - 春 相关性: 0.385 (基于1766行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西北 - 秋 相关性: 0.351 (基于2185行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西南 - 冬 相关性: 0.399 (基于1842行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西南 - 夏 相关性: 0.405 (基于1635行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西南 - 春 相关性: 0.453 (基于1926行数据)
+2025-05-28 14:12:10 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西南 - 秋 相关性: 0.295 (基于1420行数据)
+2025-05-28 14:12:10 | INFO     | __main__:analyze_correlation:994 - 相关性分析完成
+2025-05-28 14:14:49 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:14:49 | INFO     | __main__:analyze_correlation:933 - 开始加载数据...
+2025-05-28 14:15:02 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 14:15:02 | INFO     | __main__:analyze_correlation:939 - 开始列名映射...
+2025-05-28 14:15:02 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:15:08 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': None, '季节': None, '站点': '站点', '风速': '风速(m/s)', '臭氧浓度': 'O3'}
+2025-05-28 14:15:08 | INFO     | __main__:_get_all_column_mappings:1032 - 需要处理的派生字段: ['风向方位', '季节']
+2025-05-28 14:15:08 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:15:11 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 14:15:11 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 风向方位 -> 风向方位
+2025-05-28 14:15:11 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 季节 -> 季节
+2025-05-28 14:15:11 | INFO     | __main__:_get_all_column_mappings:1044 - 最终列名映射: {'风向方位': '风向方位', '季节': '季节', '站点': '站点', '风速': '风速(m/s)', '臭氧浓度': 'O3'}
+2025-05-28 14:15:11 | INFO     | __main__:analyze_correlation:942 - 开始生成派生字段...
+2025-05-28 14:15:11 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['风向方位', '季节']
+2025-05-28 14:15:11 | INFO     | __main__:_resolve_dependencies:323 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 14:15:11 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:15:14 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 14:15:14 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 风向 -> 风向(°)
+2025-05-28 14:15:14 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 风向方位
+2025-05-28 14:15:14 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 14:15:14 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 14:15:14 | INFO     | __main__:analyze_correlation:947 - 应用过滤条件...
+2025-05-28 14:15:14 | INFO     | __main__:analyze_correlation:975 - 开始计算两变量相关性...
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:610 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['季节', '风向方位']
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:611 - 数据框列名: ['风速(m/s)', 'O3', '季节', '风向方位']
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:612 - 数据框形状: (8450, 4)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:624 - 分组成功，共有 20 个分组
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 冬 - 北 相关性: 0.305 (基于2069行数据)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 夏 - 东 数据不足: 清洗后16行 (原始16行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 夏 - 东北 数据不足: 清洗后5行 (原始5行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 夏 - 东南 数据不足: 清洗后16行 (原始16行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 夏 - 北 相关性: 0.256 (基于2004行数据)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 夏 - 南 数据不足: 清洗后1行 (原始1行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 夏 - 西 相关性: 0.457 (基于37行数据)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 夏 - 西北 数据不足: 清洗后29行 (原始29行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 夏 - 西南 数据不足: 清洗后11行 (原始11行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 春 - 东北 数据不足: 清洗后2行 (原始2行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 春 - 北 相关性: 0.078 (基于2128行数据)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 春 - 西 数据不足: 清洗后9行 (原始9行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 春 - 西北 数据不足: 清洗后2行 (原始2行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 春 - 西南 数据不足: 清洗后2行 (原始2行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 秋 - 东南 数据不足: 清洗后1行 (原始1行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 秋 - 北 相关性: 0.143 (基于2104行数据)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 秋 - 南 数据不足: 清洗后1行 (原始1行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 秋 - 西 数据不足: 清洗后2行 (原始2行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 秋 - 西北 数据不足: 清洗后2行 (原始2行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 秋 - 西南 数据不足: 清洗后9行 (原始9行, 最小要求30行)
+2025-05-28 14:15:14 | INFO     | __main__:analyze_correlation:994 - 相关性分析完成
+2025-05-28 14:16:57 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:17:30 | ERROR    | __main__:correlation_analysis:1137 - 相关性分析失败: name 'min_sample_size' is not defined
+2025-05-28 14:39:40 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:40:25 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:40:25 | INFO     | __main__:analyze_correlation:933 - 开始加载数据...
+2025-05-28 14:40:40 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 14:40:40 | INFO     | __main__:analyze_correlation:939 - 开始列名映射...
+2025-05-28 14:40:40 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:40:49 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': None, '臭氧浓度': 'O3', '风速': '风速(m/s)', '季节': None}
+2025-05-28 14:40:49 | INFO     | __main__:_get_all_column_mappings:1032 - 需要处理的派生字段: ['风向方位', '季节']
+2025-05-28 14:40:49 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:40:51 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 14:40:51 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 风向方位 -> 风向方位
+2025-05-28 14:40:51 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 季节 -> 季节
+2025-05-28 14:40:51 | INFO     | __main__:_get_all_column_mappings:1044 - 最终列名映射: {'风向方位': '风向方位', '臭氧浓度': 'O3', '风速': '风速(m/s)', '季节': '季节'}
+2025-05-28 14:40:51 | INFO     | __main__:analyze_correlation:942 - 开始生成派生字段...
+2025-05-28 14:40:51 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['风向方位', '季节']
+2025-05-28 14:40:51 | INFO     | __main__:_resolve_dependencies:323 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 14:40:51 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:40:55 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 14:40:55 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 风向 -> 风向(°)
+2025-05-28 14:40:55 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 风向方位
+2025-05-28 14:40:55 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 14:40:55 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 14:40:55 | INFO     | __main__:analyze_correlation:947 - 应用过滤条件...
+2025-05-28 14:40:55 | INFO     | __main__:analyze_correlation:975 - 开始计算两变量相关性...
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:610 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['风向方位', '季节']
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:611 - 数据框列名: ['风速(m/s)', 'O3', '风向方位', '季节']
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:612 - 数据框形状: (83983, 4)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:624 - 分组成功，共有 32 个分组
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东 - 冬 相关性: 0.227 (基于2315行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东 - 夏 相关性: 0.102 (基于1878行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东 - 春 相关性: 0.098 (基于2085行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东 - 秋 相关性: 0.375 (基于2299行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东北 - 冬 相关性: 0.28 (基于1154行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东北 - 夏 相关性: 0.304 (基于1418行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东北 - 春 相关性: 0.347 (基于1285行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东北 - 秋 相关性: 0.329 (基于1304行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东南 - 冬 相关性: 0.254 (基于2102行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东南 - 夏 相关性: 0.199 (基于2499行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东南 - 春 相关性: 0.235 (基于2290行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东南 - 秋 相关性: 0.308 (基于3215行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 冬 相关性: 0.304 (基于7369行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 夏 相关性: 0.273 (基于8000行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 春 相关性: 0.229 (基于8105行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 秋 相关性: 0.312 (基于6474行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 南 - 冬 相关性: 0.243 (基于1787行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 南 - 夏 相关性: 0.153 (基于2305行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 南 - 春 相关性: 0.222 (基于2308行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 南 - 秋 相关性: 0.259 (基于2148行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西 - 冬 相关性: 0.529 (基于1752行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西 - 夏 相关性: 0.474 (基于1587行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西 - 春 相关性: 0.469 (基于1589行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西 - 秋 相关性: 0.456 (基于1679行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西北 - 冬 相关性: 0.473 (基于2463行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西北 - 夏 相关性: 0.36 (基于1799行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西北 - 春 相关性: 0.385 (基于1766行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西北 - 秋 相关性: 0.351 (基于2185行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西南 - 冬 相关性: 0.399 (基于1842行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西南 - 夏 相关性: 0.405 (基于1635行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西南 - 春 相关性: 0.453 (基于1926行数据)
+2025-05-28 14:40:55 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西南 - 秋 相关性: 0.295 (基于1420行数据)
+2025-05-28 14:40:55 | INFO     | __main__:analyze_correlation:994 - 相关性分析完成
+2025-05-28 14:43:16 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:43:43 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:44:18 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:44:18 | INFO     | __main__:analyze_correlation:933 - 开始加载数据...
+2025-05-28 14:44:32 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 14:44:32 | INFO     | __main__:analyze_correlation:939 - 开始列名映射...
+2025-05-28 14:44:32 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:44:38 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'站点': '站点', '风速': '风速(m/s)', '风向方位': None, '季节': None, '臭氧浓度': 'O3'}
+2025-05-28 14:44:38 | INFO     | __main__:_get_all_column_mappings:1032 - 需要处理的派生字段: ['风向方位', '季节']
+2025-05-28 14:44:38 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:44:40 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 14:44:40 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 风向方位 -> 风向方位
+2025-05-28 14:44:40 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 季节 -> 季节
+2025-05-28 14:44:40 | INFO     | __main__:_get_all_column_mappings:1044 - 最终列名映射: {'站点': '站点', '风速': '风速(m/s)', '风向方位': '风向方位', '季节': '季节', '臭氧浓度': 'O3'}
+2025-05-28 14:44:40 | INFO     | __main__:analyze_correlation:942 - 开始生成派生字段...
+2025-05-28 14:44:40 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['风向方位', '季节']
+2025-05-28 14:44:40 | INFO     | __main__:_resolve_dependencies:323 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 14:44:40 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:44:48 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 14:44:48 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 风向 -> 风向(°)
+2025-05-28 14:44:48 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 风向方位
+2025-05-28 14:44:48 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 14:44:48 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 14:44:48 | INFO     | __main__:analyze_correlation:947 - 应用过滤条件...
+2025-05-28 14:44:48 | INFO     | __main__:analyze_correlation:975 - 开始计算两变量相关性...
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:610 - 开始分组相关性计算: var1=风速(m/s), var2=O3, group_by=['风向方位', '季节']
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:611 - 数据框列名: ['风速(m/s)', 'O3', '风向方位', '季节']
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:612 - 数据框形状: (8450, 4)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:624 - 分组成功，共有 20 个分组
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东 - 夏 相关性: 0.173 (基于16行数据)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 东北 - 夏 数据不足: 清洗后5行 (原始5行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 东北 - 春 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 东南 - 夏 相关性: -0.064 (基于16行数据)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 东南 - 秋 数据不足: 清洗后1行 (原始1行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 冬 相关性: 0.305 (基于2069行数据)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 夏 相关性: 0.256 (基于2004行数据)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 春 相关性: 0.078 (基于2128行数据)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 北 - 秋 相关性: 0.143 (基于2104行数据)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 南 - 夏 数据不足: 清洗后1行 (原始1行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 南 - 秋 数据不足: 清洗后1行 (原始1行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西 - 夏 相关性: 0.457 (基于37行数据)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 西 - 春 数据不足: 清洗后9行 (原始9行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 西 - 秋 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:641 - 分组 西北 - 夏 相关性: 0.547 (基于29行数据)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 西北 - 春 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 西北 - 秋 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 西南 - 夏 数据不足: 清洗后11行 (原始11行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 西南 - 春 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:_calculate_grouped_correlation:636 - 分组 西南 - 秋 数据不足: 清洗后9行 (原始9行, 最小要求15行)
+2025-05-28 14:44:48 | INFO     | __main__:analyze_correlation:994 - 相关性分析完成
+2025-05-28 14:46:14 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs
+2025-05-28 14:46:14 | INFO     | __main__:analyze_correlation:933 - 开始加载数据...
+2025-05-28 14:46:27 | INFO     | __main__:_load_from_pandas:109 - 成功加载数据: 83983行 x 23列
+2025-05-28 14:46:27 | INFO     | __main__:analyze_correlation:939 - 开始列名映射...
+2025-05-28 14:46:27 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:46:32 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'站点': '站点', '风速': '风速(m/s)', '风向方位': None, '季节': None, 'PM2.5': 'PM2.5', '臭氧浓度': 'O3'}
+2025-05-28 14:46:32 | INFO     | __main__:_get_all_column_mappings:1032 - 需要处理的派生字段: ['风向方位', '季节']
+2025-05-28 14:46:32 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:46:34 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向方位': '风向方位', '季节': '季节'}
+2025-05-28 14:46:34 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 风向方位 -> 风向方位
+2025-05-28 14:46:34 | INFO     | __main__:_get_all_column_mappings:1042 - 派生字段映射: 季节 -> 季节
+2025-05-28 14:46:34 | INFO     | __main__:_get_all_column_mappings:1044 - 最终列名映射: {'站点': '站点', '风速': '风速(m/s)', '风向方位': '风向方位', '季节': '季节', 'PM2.5': 'PM2.5', '臭氧浓度': 'O3'}
+2025-05-28 14:46:34 | INFO     | __main__:analyze_correlation:942 - 开始生成派生字段...
+2025-05-28 14:46:35 | INFO     | __main__:generate_required_fields:277 - 需要生成的派生字段: ['风向方位', '季节']
+2025-05-28 14:46:35 | INFO     | __main__:_resolve_dependencies:323 - 字段 风向 不存在，尝试自动匹配...
+2025-05-28 14:46:35 | INFO     | __main__:get_column_mapping:190 - 尝试第 1 次列名映射...
+2025-05-28 14:46:38 | INFO     | __main__:get_column_mapping:200 - 列名映射成功: {'风向': '风向(°)'}
+2025-05-28 14:46:38 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 风向 -> 风向(°)
+2025-05-28 14:46:38 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 风向方位
+2025-05-28 14:46:38 | INFO     | __main__:_resolve_dependencies:336 - 依赖字段解析: 时间 -> 时间
+2025-05-28 14:46:38 | INFO     | __main__:generate_required_fields:293 - 成功生成派生字段: 季节
+2025-05-28 14:46:38 | INFO     | __main__:analyze_correlation:947 - 应用过滤条件...
+2025-05-28 14:46:38 | INFO     | __main__:analyze_correlation:986 - 开始计算3变量相关性矩阵...
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 东北 - 夏 数据不足: 清洗后5行 (原始5行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 东北 - 春 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 东南 - 秋 数据不足: 清洗后1行 (原始1行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 南 - 夏 数据不足: 清洗后1行 (原始1行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 南 - 秋 数据不足: 清洗后1行 (原始1行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 西 - 春 数据不足: 清洗后9行 (原始9行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 西 - 秋 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 西北 - 春 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 西北 - 秋 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 西南 - 夏 数据不足: 清洗后11行 (原始11行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 西南 - 春 数据不足: 清洗后2行 (原始2行, 最小要求15行)
+2025-05-28 14:46:38 | WARNING  | __main__:_calculate_grouped_correlation_matrix:516 - 分组 西南 - 秋 数据不足: 清洗后9行 (原始9行, 最小要求15行)
+2025-05-28 14:46:38 | INFO     | __main__:analyze_correlation:994 - 相关性分析完成
+2025-05-28 15:05:15 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [corr] - 日志目录: logs

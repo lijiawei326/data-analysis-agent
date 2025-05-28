@@ -1,0 +1,81 @@
+2025-05-28 09:01:19 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [analysis-agent] - 日志目录: logs
+2025-05-28 09:01:19 | INFO     | __main__:initialize_mcp:60 - MCP服务器连接成功
+2025-05-28 09:01:19 | INFO     | __main__:initialize_agent:77 - 分析Agent初始化成功
+2025-05-28 09:02:43 | INFO     | __main__:chat:98 - 收到聊天请求: 你好...
+2025-05-28 09:02:43 | INFO     | logger_config:log_user_action:113 - [USER] 发送消息: 你好
+2025-05-28 09:02:43 | INFO     | __main__:chat:111 - 开始运行Agent...
+2025-05-28 09:02:43 | INFO     | __main__:chat:115 - 当前对话历史长度: 0
+2025-05-28 09:03:02 | INFO     | __main__:chat:126 - Agent运行完成，耗时: 19.22秒
+2025-05-28 09:03:02 | INFO     | __main__:chat:127 - result.final_output: <think>
+好的，用户打招呼说“你好”，我需要友好回应。先确认是否有需要调用工具的情况，但看起来只是普通问候，直接回复即可。保持自然，用中文回应。
+
+现在分析用户意图，用户可能只是测试或开始对话。我应该提供帮助信息，询问他们需要什么帮助。检查是否有需要调用函数的地方，但当前消息不需要使用任何工具。所以直接回复“你好！有什么我可以帮助你的吗？”即可。
+</think>
+
+你好！有什么我可以帮助你的吗？
+2025-05-28 09:03:02 | INFO     | __main__:chat:135 - 输出为模型输出
+2025-05-28 09:03:02 | INFO     | logger_config:log_with_tag:108 - [CHAT] AI回复: <think>
+好的，用户打招呼说“你好”，我需要友好回应。先确认是否有需要调用工具的情况，但看起来只是普通问候，直接回复即可。保持自然，用中文回应。
+
+现在分析用户意图，用户可能只是测试或开始对话。我应该提供帮助信息，询问他们需要什么帮助。检查是否有需要调用函数的地方，但当前消息不需要使用任何工具。所以直接回复“你好！有什么我可以帮助你的吗？”即可。
+</think>
+
+你好！有什么我可以帮助你的吗？
+2025-05-28 09:03:02 | INFO     | logger_config:log_performance:129 - [PERF] Chat Processing: 19.217s 
+2025-05-28 09:03:02 | INFO     | __main__:chat:144 - result_text: <think>
+好的，用户打招呼说“你好”，我需要友好回应。先确认是否有需要调用工具的情况，但看起来只是普通问候，直接回复即可。保持自然，用中文回应。
+
+现在分析用户意图，用户可能只是测试或开始对话。我应该提供帮助信息，询问他们需要什么帮助。检查是否有需要调用函数的地方，但当前消息不需要使用任何工具。所以直接回复“你好！有什么我可以帮助你的吗？”即可。
+</think>
+
+你好！有什么我可以帮助你的吗？
+2025-05-28 09:03:02 | INFO     | __main__:chat:145 - conversation_history: [{'role': 'user', 'content': '你好'}, {'id': '__fake_id__', 'content': [{'annotations': [], 'text': '<think>\n好的，用户打招呼说“你好”，我需要友好回应。先确认是否有需要调用工具的情况，但看起来只是普通问候，直接回复即可。保持自然，用中文回应。\n\n现在分析用户意图，用户可能只是测试或开始对话。我应该提供帮助信息，询问他们需要什么帮助。检查是否有需要调用函数的地方，但当前消息不需要使用任何工具。所以直接回复“你好！有什么我可以帮助你的吗？”即可。\n</think>\n\n你好！有什么我可以帮助你的吗？', 'type': 'output_text'}], 'role': 'assistant', 'status': 'completed', 'type': 'message'}]
+2025-05-28 09:03:02 | INFO     | logger_config:log_business_event:145 - [EVENT] 对话完成 | Data: 轮次=1 | 历史长度=2 | 处理时间=19.22s
+2025-05-28 09:04:50 | INFO     | __main__:chat:98 - 收到聊天请求: 对/home/work/disk1/LLM-ljw/agent/analysis-agent/data/区控.xlsx中达旗白塔公园 站点的风速与PM2.5计算相关性...
+2025-05-28 09:04:50 | INFO     | logger_config:log_user_action:113 - [USER] 发送消息: 对/home/work/disk1/LLM-ljw/agent/analysis-agent/data/区控.xlsx中达旗白塔公园 站点的风速与PM2.5计算相关性
+2025-05-28 09:04:50 | INFO     | __main__:chat:111 - 开始运行Agent...
+2025-05-28 09:04:50 | INFO     | __main__:chat:115 - 当前对话历史长度: 2
+2025-05-28 09:05:25 | INFO     | __main__:chat:126 - Agent运行完成，耗时: 34.56秒
+2025-05-28 09:05:25 | INFO     | __main__:chat:127 - result.final_output: {"type":"text","text":"| 变量组合 | 相关性 |\n|---|---|\n| 风速(m/s) vs PM2.5 | -0.051 |\n","annotations":null}
+2025-05-28 09:05:25 | INFO     | __main__:chat:131 - 输出为工具调用结果
+2025-05-28 09:05:25 | INFO     | logger_config:log_with_tag:108 - [CHAT] AI回复: | 变量组合 | 相关性 |
+|---|---|
+| 风速(m/s) vs PM2.5 | -0.051 |
+
+2025-05-28 09:05:25 | INFO     | logger_config:log_performance:129 - [PERF] Chat Processing: 34.555s 
+2025-05-28 09:05:25 | INFO     | __main__:chat:144 - result_text: | 变量组合 | 相关性 |
+|---|---|
+| 风速(m/s) vs PM2.5 | -0.051 |
+
+2025-05-28 09:05:25 | INFO     | __main__:chat:145 - conversation_history: [{'role': 'user', 'content': '你好'}, {'id': '__fake_id__', 'content': [{'annotations': [], 'text': '<think>\n好的，用户打招呼说“你好”，我需要友好回应。先确认是否有需要调用工具的情况，但看起来只是普通问候，直接回复即可。保持自然，用中文回应。\n\n现在分析用户意图，用户可能只是测试或开始对话。我应该提供帮助信息，询问他们需要什么帮助。检查是否有需要调用函数的地方，但当前消息不需要使用任何工具。所以直接回复“你好！有什么我可以帮助你的吗？”即可。\n</think>\n\n你好！有什么我可以帮助你的吗？', 'type': 'output_text'}], 'role': 'assistant', 'status': 'completed', 'type': 'message'}, {'role': 'user', 'content': '对/home/work/disk1/LLM-ljw/agent/analysis-agent/data/区控.xlsx中达旗白塔公园 站点的风速与PM2.5计算相关性'}, {'arguments': '{"correlation_vars":["风速","PM2.5"],"filters":{"站点":"达旗白塔公园"},"group_by":[],"read_data_param":{"read_data_method":"PANDAS","read_data_query":"/home/work/disk1/LLM-ljw/agent/analysis-agent/data/区控.xlsx"}}', 'call_id': 'call_6u9me9w6', 'name': 'correlation_analysis', 'type': 'function_call', 'id': '__fake_id__'}, {'call_id': 'call_6u9me9w6', 'output': '{"type":"text","text":"| 变量组合 | 相关性 |\\n|---|---|\\n| 风速(m/s) vs PM2.5 | -0.051 |\\n","annotations":null}', 'type': 'function_call_output'}]
+2025-05-28 09:05:25 | INFO     | logger_config:log_business_event:145 - [EVENT] 对话完成 | Data: 轮次=2 | 历史长度=5 | 处理时间=34.56s
+2025-05-28 09:06:27 | INFO     | __main__:chat:98 - 收到聊天请求: 对不同季节同样计算相关性...
+2025-05-28 09:06:27 | INFO     | logger_config:log_user_action:113 - [USER] 发送消息: 对不同季节同样计算相关性
+2025-05-28 09:06:27 | INFO     | __main__:chat:111 - 开始运行Agent...
+2025-05-28 09:06:27 | INFO     | __main__:chat:115 - 当前对话历史长度: 5
+2025-05-28 09:06:59 | INFO     | __main__:chat:126 - Agent运行完成，耗时: 31.94秒
+2025-05-28 09:06:59 | INFO     | __main__:chat:127 - result.final_output: {"type":"text","text":"| 季节 | 相关性 |\n|---|---|\n| 春 | 0.063 |\n| 夏 | -0.118 |\n| 秋 | -0.175 |\n| 冬 | -0.177 |\n","annotations":null}
+2025-05-28 09:06:59 | INFO     | __main__:chat:131 - 输出为工具调用结果
+2025-05-28 09:06:59 | INFO     | logger_config:log_with_tag:108 - [CHAT] AI回复: | 季节 | 相关性 |
+|---|---|
+| 春 | 0.063 |
+| 夏 | -0.118 |
+| 秋 | -0.175 |
+| 冬 | -0.177 |
+
+2025-05-28 09:06:59 | INFO     | logger_config:log_performance:129 - [PERF] Chat Processing: 31.939s 
+2025-05-28 09:06:59 | INFO     | __main__:chat:144 - result_text: | 季节 | 相关性 |
+|---|---|
+| 春 | 0.063 |
+| 夏 | -0.118 |
+| 秋 | -0.175 |
+| 冬 | -0.177 |
+
+2025-05-28 09:06:59 | INFO     | __main__:chat:145 - conversation_history: [{'role': 'user', 'content': '你好'}, {'id': '__fake_id__', 'content': [{'annotations': [], 'text': '<think>\n好的，用户打招呼说“你好”，我需要友好回应。先确认是否有需要调用工具的情况，但看起来只是普通问候，直接回复即可。保持自然，用中文回应。\n\n现在分析用户意图，用户可能只是测试或开始对话。我应该提供帮助信息，询问他们需要什么帮助。检查是否有需要调用函数的地方，但当前消息不需要使用任何工具。所以直接回复“你好！有什么我可以帮助你的吗？”即可。\n</think>\n\n你好！有什么我可以帮助你的吗？', 'type': 'output_text'}], 'role': 'assistant', 'status': 'completed', 'type': 'message'}, {'role': 'user', 'content': '对/home/work/disk1/LLM-ljw/agent/analysis-agent/data/区控.xlsx中达旗白塔公园 站点的风速与PM2.5计算相关性'}, {'arguments': '{"correlation_vars":["风速","PM2.5"],"filters":{"站点":"达旗白塔公园"},"group_by":[],"read_data_param":{"read_data_method":"PANDAS","read_data_query":"/home/work/disk1/LLM-ljw/agent/analysis-agent/data/区控.xlsx"}}', 'call_id': 'call_6u9me9w6', 'name': 'correlation_analysis', 'type': 'function_call', 'id': '__fake_id__'}, {'call_id': 'call_6u9me9w6', 'output': '{"type":"text","text":"| 变量组合 | 相关性 |\\n|---|---|\\n| 风速(m/s) vs PM2.5 | -0.051 |\\n","annotations":null}', 'type': 'function_call_output'}, {'role': 'user', 'content': '对不同季节同样计算相关性'}, {'arguments': '{"correlation_vars":["风速","PM2.5"],"filters":{"站点":"达旗白塔公园"},"group_by":["季节"],"read_data_param":{"read_data_method":"PANDAS","read_data_query":"/home/work/disk1/LLM-ljw/agent/analysis-agent/data/区控.xlsx"}}', 'call_id': 'call_ee6cqkth', 'name': 'correlation_analysis', 'type': 'function_call', 'id': '__fake_id__'}, {'call_id': 'call_ee6cqkth', 'output': '{"type":"text","text":"| 季节 | 相关性 |\\n|---|---|\\n| 春 | 0.063 |\\n| 夏 | -0.118 |\\n| 秋 | -0.175 |\\n| 冬 | -0.177 |\\n","annotations":null}', 'type': 'function_call_output'}]
+2025-05-28 09:06:59 | INFO     | logger_config:log_business_event:145 - [EVENT] 对话完成 | Data: 轮次=4 | 历史长度=8 | 处理时间=31.94s
+2025-05-28 09:15:14 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [analysis-agent] - 日志目录: logs
+2025-05-28 09:15:14 | INFO     | __main__:initialize_mcp:60 - MCP服务器连接成功
+2025-05-28 09:15:14 | INFO     | __main__:initialize_agent:77 - 分析Agent初始化成功
+2025-05-28 12:15:24 | INFO     | logger_config:_setup_logging:99 - 日志系统已初始化 [analysis-agent] - 日志目录: logs
+2025-05-28 12:15:24 | INFO     | __main__:initialize_mcp:60 - MCP服务器连接成功
+2025-05-28 12:15:24 | INFO     | __main__:initialize_agent:77 - 分析Agent初始化成功

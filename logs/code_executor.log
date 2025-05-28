@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/work/disk1/LLM-ljw/agent/analysis-agent/server/code_executor.py", line 16, in <module>
+    import seaborn as sns
+ModuleNotFoundError: No module named 'seaborn'

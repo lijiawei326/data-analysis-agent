@@ -7,6 +7,7 @@ from mcp.server.fastmcp import FastMCP
 from custom_types.types import AnalysisContext
 from agent_mcp.loader import DataReadParams, loader_agent, ReadMethod
 from agent_mcp.analyst import variable_analysis_agent, VariableAnalysisDecision, description_analysis_agent
+from agent_mcp.visualization_agent import visualization_agent, correlation_visualization_agent, VisualizationCode
 from agents import Runner
 import time
 import json
@@ -215,9 +216,87 @@ class Manager:
             return remove_think(single_variable_report.final_output)
         else:
             return f'## {variable_name}不进行分析\n原因：{judge_result.reason}'
-    
 
+    async def get_data_summary(self):
+        """
+        获取数据摘要信息，用于可视化agent
+        """
+        if self.context.data.data is None:
+            raise ValueError("数据尚未加载")
+            
+        df = self.context.data.data
+        summary = {
+            'shape': df.shape,
+            'columns': df.columns.tolist(),
+            'dtypes': {col: str(dtype) for col, dtype in df.dtypes.items()},
+            'numeric_columns': df.select_dtypes(include=[np.number]).columns.tolist(),
+            'categorical_columns': df.select_dtypes(include=['object', 'category']).columns.tolist(),
+            'missing_values': df.isnull().sum().to_dict(),
+            'sample_data': df.head().to_dict()
+        }
+        return summary
+
+    async def generate_visualization_code(self, visualization_request: str):
+        """
+        生成可视化代码
+        """
+        if self.context.data.data is None:
+            raise ValueError("数据尚未加载")
+            
+        # 获取数据摘要
+        data_summary = await self.get_data_summary()
         
+        # 构建输入信息
+        input_info = json.dumps({
+            'visualization_request': visualization_request,
+            'data_summary': data_summary
+        })
+        
+        print(f'可视化请求：{visualization_request}')
+        print(f'数据摘要：{data_summary}')
+        
+        try:
+            time.sleep(1)
+            result = await Runner.run(
+                starting_agent=visualization_agent,
+                input=input_info
+            )
+            viz_code = result.final_output_as(VisualizationCode)
+            return viz_code
+        except Exception as e:
+            print(f'可视化代码生成失败：{e}')
+            raise ValueError(f'可视化代码生成失败: {e}')
+
+    async def generate_correlation_visualization_code(self):
+        """
+        生成相关性分析可视化代码
+        """
+        if self.context.data.data is None:
+            raise ValueError("数据尚未加载")
+            
+        # 获取数据摘要
+        data_summary = await self.get_data_summary()
+        
+        # 构建输入信息
+        input_info = json.dumps({
+            'analysis_type': 'correlation',
+            'data_summary': data_summary
+        })
+        
+        print(f'生成相关性分析可视化代码')
+        print(f'数据摘要：{data_summary}')
+        
+        try:
+            time.sleep(1)
+            result = await Runner.run(
+                starting_agent=correlation_visualization_agent,
+                input=input_info
+            )
+            viz_code = result.final_output_as(VisualizationCode)
+            return viz_code
+        except Exception as e:
+            print(f'相关性可视化代码生成失败：{e}')
+            raise ValueError(f'相关性可视化代码生成失败: {e}')
 
 @mcp.tool()
 async def analysis_report(read_data_method, read_data_param):
@@ -233,6 +312,102 @@ async def analysis_report(read_data_method, read_data_param):
         return f'数据分析报告生成失败: {e}'
     print(result)
     return result
+
+
+@mcp.tool()
+async def generate_visualization_code(read_data_method, read_data_param, visualization_request):
+    """
+    生成可视化代码。
+    :param read_data_method: 读取数据的方式，包括`SQL`或`PANDAS`
+    :param read_data_param: SQL查询语句或文件路径
+    :param visualization_request: 可视化需求描述
+    """
+    manager = Manager()
+    try:
+        # 加载数据
+        print('开始读取数据...')
+        manager.context.data.data = await manager._load_data(read_data_method, read_data_param)
+        print('成功读取数据')
+        
+        # 生成可视化代码
+        viz_code = await manager.generate_visualization_code(visualization_request)
+        
+        return {
+            'success': True,
+            'code': viz_code.code,
+            'description': viz_code.description,
+            'chart_type': viz_code.chart_type
+        }
+    except Exception as e:
+        return {
+            'success': False,
+            'error': f'可视化代码生成失败: {e}',
+            'code': '',
+            'description': '',
+            'chart_type': ''
+        }
+
+
+@mcp.tool()
+async def generate_correlation_visualization_code(read_data_method, read_data_param):
+    """
+    生成相关性分析可视化代码。
+    :param read_data_method: 读取数据的方式，包括`SQL`或`PANDAS`
+    :param read_data_param: SQL查询语句或文件路径
+    """
+    manager = Manager()
+    try:
+        # 加载数据
+        print('开始读取数据...')
+        manager.context.data.data = await manager._load_data(read_data_method, read_data_param)
+        print('成功读取数据')
+        
+        # 生成相关性可视化代码
+        viz_code = await manager.generate_correlation_visualization_code()
+        
+        return {
+            'success': True,
+            'code': viz_code.code,
+            'description': viz_code.description,
+            'chart_type': viz_code.chart_type
+        }
+    except Exception as e:
+        return {
+            'success': False,
+            'error': f'相关性可视化代码生成失败: {e}',
+            'code': '',
+            'description': '',
+            'chart_type': ''
+        }
+
+
+@mcp.tool()
+async def get_data_summary_info(read_data_method, read_data_param):
+    """
+    获取数据摘要信息。
+    :param read_data_method: 读取数据的方式，包括`SQL`或`PANDAS`
+    :param read_data_param: SQL查询语句或文件路径
+    """
+    manager = Manager()
+    try:
+        # 加载数据
+        print('开始读取数据...')
+        manager.context.data.data = await manager._load_data(read_data_method, read_data_param)
+        print('成功读取数据')
+        
+        # 获取数据摘要
+        summary = await manager.get_data_summary()
+        
+        return {
+            'success': True,
+            'summary': summary
+        }
+    except Exception as e:
+        return {
+            'success': False,
+            'error': f'获取数据摘要失败: {e}',
+            'summary': {}
+        }
 
 
 if __name__ == '__main__':
